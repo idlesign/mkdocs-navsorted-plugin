@@ -59,4 +59,4 @@ Read the documentation.
 
 ## Documentation
 
-https://mkdocs-navsorted-plugin.readthedocs.org/
+https://mkdocs-navsorted-plugin.readthedocs.io
