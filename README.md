@@ -2,8 +2,9 @@
 
 https://github.com/idlesign/mkdocs-navsorted-plugin
 
-[![PyPI - Version](https://img.shields.io/pypi/v/django-sitetree)](https://pypi.python.org/pypi/django-sitetree)
-[![License](https://img.shields.io/pypi/l/django-sitetree)](https://pypi.python.org/pypi/django-sitetree)
+[![PyPI - Version](https://img.shields.io/pypi/v/mkdocs-navsorted-plugin)](https://pypi.python.org/pypi/mkdocs-navsorted-plugin)
+[![License](https://img.shields.io/pypi/l/mkdocs-navsorted-plugin)](https://pypi.python.org/pypi/mkdocs-navsorted-plugin)
+[![Coverage](https://img.shields.io/coverallsCoverage/github/idlesign/mkdocs-navsorted-plugin)](https://coveralls.io/r/idlesign/mkdocs-navsorted-plugin)
 
 ## Description
 
