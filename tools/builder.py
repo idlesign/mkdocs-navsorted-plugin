@@ -1,12 +1,6 @@
-from mkdocs.commands import build
-from mkdocs import config
+import os
 
+from mkdocs_navsorted.utils import build_docs
 
-cfg = config.load_config()
-cfg.plugins.on_startup(command='build', dirty=False)
-
-try:
-    build.build(cfg)
-
-finally:
-    cfg.plugins.on_shutdown()
+os.chdir('../')
+build_docs()

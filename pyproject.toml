@@ -23,10 +23,22 @@ Documentation = "https://mkdocs-navsorted-plugin.readthedocs.org/"
 
 [dependency-groups]
 dev = [
+    {include-group = "docs"},
+    {include-group = "linters"},
+    {include-group = "tests"},
+]
+docs = [
     "mkdocs",
     "mkdocs-material",
-    "pytest",
+]
+linters = [
     "ruff",
+]
+tests = [
+    "pytest",
+    "pytest-cov",
+    "pytest-datafixtures",
+    "coverage",
 ]
 
 [build-system]
@@ -41,3 +53,16 @@ packages = ["src/mkdocs_navsorted"]
 
 [tool.hatch.build.targets.sdist]
 packages = ["src/"]
+
+[tool.coverage.run]
+source = [
+    "src/",
+]
+omit = []
+
+[tool.coverage.report]
+fail_under = 98.00
+exclude_also = [
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]
