@@ -36,5 +36,8 @@ build-backend = "hatchling.build"
 [tool.hatch.version]
 path = "src/mkdocs_navsorted/__init__.py"
 
-[tool.hatch.build.targets.sdist]
+[tool.hatch.build.targets.wheel]
 packages = ["src/mkdocs_navsorted"]
+
+[tool.hatch.build.targets.sdist]
+packages = ["src/"]
